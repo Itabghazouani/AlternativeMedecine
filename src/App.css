@@ -5,38 +5,141 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+* {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+max-width: 650px;
+margin: 0 auto;
+border: 1px solid #FFCC8D;
 }
 
-.card {
-  padding: 2em;
+.site-wrapper {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: #cfe3bf;
 }
 
-.read-the-docs {
-  color: #888;
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #cfe3bf;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-between;
+  background: #536C45;
+}
+
+.navbar--logo {
+  font-family: "Inter", sans-serif;
+  font-size: 1.271875em;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.navbar--logo:focus,
+.navbar--logo:active,
+.navbar--links:focus,
+.navbar--links:active,
+header a {
+  text-decoration: none;
+  outline: none;
+}
+
+.navbar--links {
+  display: flex;
+  gap: 1.5em;
+
+}
+
+header a{
+  font-weight: 600;
+  line-height: 22.92px;
+  color: #EFE6DB
+}
+
+.current-link {
+font-weight: bold;
+text-decoration: underline;
+color: #000000
+}
+
+.navbar--logo:hover, .navbar--links > a:hover {
+text-decoration: underline;
+font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #536C45;
+  color: #fff;
+  height: 74px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+}
+
+/*** HOME PAGE ***/
+.home-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+      url("../public/assets/medecinealternative.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding: 45px 23px;
+}
+
+.home-container h1 {
+  margin-top: 3em;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+.home-container p {
+  line-height: 24px;
+}
+
+.home-container a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff8c38;
+  border: none;
+  width: 100%;
+  margin-top: 27px;
+  padding-block: 0.75rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.home-container a:hover {
+  transform: translate(1px, 1px);
 }
