@@ -17,9 +17,8 @@ html, body {
 }
 
 body {
-max-width: 650px;
+max-width: 850px;
 margin: 0 auto;
-border: 1px solid #FFCC8D;
 }
 
 .site-wrapper {
@@ -100,6 +99,7 @@ font-weight: bold;
 }
 
 /*** HOME PAGE ***/
+
 .home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
       url("../public/assets/medecinealternative.png") no-repeat center center;
@@ -109,31 +109,32 @@ font-weight: bold;
   background-size: cover;
   min-height: 100vh;
   color: white;
-  text-shadow: 1px 1px 2px black;
   padding: 45px 23px;
 }
 
 .home-container h1 {
-  margin-top: 3em;
+  margin-top: 4em;
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 42px;
+  text-shadow: 1px 1px 2px #536C45;
 }
 
 .home-container p {
   line-height: 24px;
+  text-shadow: 1px 1px 2px #536C45;
 }
 
 .home-container a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  background-color: #ff8c38;
+  background-color: #cfe3bf;
   border: none;
-  width: 100%;
+  width: 85%;
   margin-top: 27px;
   padding-block: 0.75rem;
-  color: white;
+  color: #172B24;
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
@@ -142,4 +143,68 @@ font-weight: bold;
 
 .home-container a:hover {
   transform: translate(1px, 1px);
+}
+
+/* About */
+
+.about--image {
+  background-image: url(../public/assets/aboutalternmed.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 235px;
+}
+
+.about--content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 4em;
+  color: #161616;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.about--content > h1 {
+  font-size: 1.8rem;
+  line-height: 38px;
+  margin-bottom: .5em;
+}
+
+.about--content_paragraph {
+  margin-bottom: 2.5em;
+}
+
+.about--content_paragraph > p {
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+}
+
+p.margin-btm {
+  margin-bottom: 1.5em;
+}
+
+/* Not Found 404 */
+
+.not-found-container {
+  padding-inline: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+
+.not-found-container > h1 {
+  color: #172B24;
+  margin-top: 2em;
+}
+
+.not-found-container .link-button {
+  width: 100%;
+  background-color: #172B24;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
 }
